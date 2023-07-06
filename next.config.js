@@ -7,8 +7,16 @@ const nextConfig = {
                 hostname: 'links.papareact.com',
                 port:''
             }
+        // ],
+        // remotePatterns: [
+        //     {
+        //         protocol: 'https',
+        //         hostname: 'cdn.sanity.io',
+        //         port:''
+        //     }
         ]
     }
 }
+
 
 module.exports = nextConfig

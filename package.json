@@ -10,6 +10,9 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.0.18",
+    "@portabletext/react": "^3.0.4",
+    "@sanity/image-url": "^1.0.2",
+    "@sanity/vision": "^3.14.1",
     "@types/node": "20.3.3",
     "@types/react": "18.2.14",
     "@types/react-dom": "18.2.6",
@@ -17,10 +20,12 @@
     "eslint": "8.44.0",
     "eslint-config-next": "13.4.7",
     "next": "13.4.7",
+    "next-sanity": "^4.3.3",
     "postcss": "8.4.24",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-twitter-embed": "^4.0.4",
+    "sanity": "^3.14.1",
     "tailwindcss": "3.3.2",
     "typescript": "5.1.6"
   }
