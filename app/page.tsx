@@ -2,19 +2,12 @@ import Feed from '@/components/Feed'
 import Image from 'next/image'
 import Sidebar from '@/components/Sidebar'
 import Widgets from '@/components/Widgets'
-import { createClient, groq } from 'next-sanity'
 // import { PortableText } from '@portabletext/react';
 
 
 
 
-const clientConfig ={
-  projectId: 'zx80sy3h',
-  dataset:'production',
-  useCdn: false,
-}
-
-// function getWence () {
+// async function fetchTweets () {
 //   return createClient(clientConfig).fetch(groq`
 //     *[_type=='wence']{
 //       _id,
@@ -31,7 +24,7 @@ const clientConfig ={
 
 export default async function Home() {
 
-  // const wence = await getWence();
+  // const tweets = await fetchTweets();
 
 
   return (
