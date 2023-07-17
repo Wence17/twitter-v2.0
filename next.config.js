@@ -4,16 +4,14 @@ const nextConfig = {
         remotePatterns: [
             {
                 protocol: 'https',
-                hostname: '**.com',
+                hostname: 'links.papareact.com',
                 port:''
-            }
-        // ],
-        // remotePatterns: [
-        //     {
-        //         protocol: 'https',
-        //         hostname: 'cdn.sanity.io',
-        //         port:''
-        //     }
+            },
+            {
+                protocol: 'https',
+                hostname: 'cdn.sanity.io',
+                port:''
+            }  
         ]
     }
 }
