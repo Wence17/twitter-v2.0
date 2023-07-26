@@ -10,18 +10,18 @@ export default defineType({
       title: 'Text in tweet',
       type: 'string',
     },
-    defineField({
+    {
       name: 'blockTweet',
       title: 'Block Tweet',
       description: 'ADMIN Controls: Toggle if Tweet is deemed inappropriate',
       type: 'boolean',
-    }),
-    defineField({
+    },
+    {
       name: 'username',
       title: 'Username',
       type: 'string',
-    }),
-    defineField({
+    },
+    {
       name: 'profileImg',
       title: 'Profile Image',
       type: 'image',
@@ -35,8 +35,8 @@ export default defineType({
           title: 'Alternative Text',
         }
       ]
-    }),
-    defineField({
+    },
+    {
       name: 'image',
       title: 'Tweet Image',
       type: 'image',
@@ -50,6 +50,6 @@ export default defineType({
           title: 'Alternative Text',
         }
       ]
-    })
+    }
   ]
 })
