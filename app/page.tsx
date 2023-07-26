@@ -6,7 +6,6 @@ import { fetchTweets } from '@/utils/fetchTweets';
 import { groq } from 'next-sanity';
 import { Tweet } from '@/typings';
 import { client } from '@/sanity/lib/client';
-// import { PortableText } from '@portabletext/react';
 
 const feedQuery = groq`
 *[_type=='tweet' && !blockTweet]{
