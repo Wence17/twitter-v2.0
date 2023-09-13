@@ -8,6 +8,7 @@ export interface Tweet extends TweetBody {
 }
 
 export type TweetBody = {
+    comments
     text: string
     username: string
     profileImg: string
