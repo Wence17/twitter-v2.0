@@ -13,14 +13,13 @@ import {
 // ___________________________________________________________________
 import Timeago from 'javascript-time-ago'
 import en from 'javascript-time-ago/locale/en.json'
-import ru from 'javascript-time-ago/locale/ru.json'
+// import ru from 'javascript-time-ago/locale/ru.json'
 
 Timeago.addDefaultLocale(en)
-Timeago.addLocale(ru)
+// Timeago.addLocale(ru)
 
 function Tweet({tweet}: {tweet: Tweet}) { 
   const [comments, setComments] = useState<Comment[]>([])
-  console.log(comments)
 
   useEffect(() => {
     const refreshComments = async () => {
@@ -48,8 +47,9 @@ function Tweet({tweet}: {tweet: Tweet}) {
 
             <TimeAgo 
               className='text-sm text-gray-500'
-              date={tweet?._createdAt}
-              // timeStyle="twitter"
+              date={Date.parse(tweet?._createdAt)}
+              // locale="en-US"
+              timeStyle="twitter"
             />
           </div>
           <p className='pt-1'>{tweet?.text}</p>
@@ -102,8 +102,9 @@ function Tweet({tweet}: {tweet: Tweet}) {
                   </p>
                   <TimeAgo 
                     className='text-sm text-gray-500'
-                    date={comment._createdAt}
-                    // timeStyle="twitter"
+                    date={Date.parse(comment._createdAt)}
+                    // locale="en-US"
+                    timeStyle="twitter"
                   />
                 </div>
                 <p>{comment.comment}</p>

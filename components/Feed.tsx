@@ -41,7 +41,7 @@ function Feed({ tweets: tweetProps }: { tweets: Tweet[] }) {
       <div>
         <Tweetbox />
       </div>
-      <div>
+      <div className="overflow-y-scroll">
         {tweets.map((tweet) => (
           <TweetComponent key={tweet._id} tweet={tweet} />
         ))}
